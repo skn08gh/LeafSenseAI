@@ -1,0 +1,28 @@
+# Python environment and cache
+.venv/
+__pycache__/
+*.py[cod]
+
+# Gradio and editor files
+.gradio/
+.vscode/
+
+# Secrets and temporary files
+.env
+.env.*
+!.env.example
+*.log
+
+# Local history and generated data
+data/history.json
+
+# Model files (share separately if needed)
+*.pth
+*.h5
+*.pt
+
+# Backups
+LeafSenseAI_Backup*/
+# Large plant image datasets
+dataset/
+training/

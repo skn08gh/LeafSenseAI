@@ -1,0 +1,26 @@
+plant_name,scientific_name,light_level,min_temperature_c,max_temperature_c,min_humidity,max_humidity,min_soil_ph,max_soil_ph,soil_moisture
+Aloe Vera,Aloe vera,bright,13,29,30,50,,,dry
+Anthurium,Anthurium andraeanum,medium,18,29,60,80,,,moist
+Asparagus Fern,Asparagus setaceus,bright,16,27,40,60,,,moist
+Bird of Paradise,Strelitzia reginae,bright,16,24,50,70,,,moderate
+Birds Nest Fern,Asplenium nidus,medium,13,21,50,70,,,moist
+Boston Fern,Nephrolepis exaltata,low,18,35,40,70,,,moist
+Cast Iron Plant,Aspidistra elatior,low,10,27,30,60,,,moderate
+Chinese Money Plant,Pilea peperomioides,medium,18,24,40,70,,,moderate
+Chinese Evergreen,Aglaonema,low,18,27,40,70,,,moist
+Jade Plant,Crassula ovata,bright,15,27,30,50,,,dry
+Kalanchoe,Kalanchoe,bright,15,29,30,50,,,dry
+Lilium,Hemerocallis,medium,13,27,40,60,,,moderate
+Monstera Deliciosa,Monstera deliciosa,medium,18,29,50,80,,,moderate
+Orchid,Orchid,medium,16,29,40,70,,,moderate
+Parlor Palm,Chamaedorea elegans,medium,16,29,40,70,,,moderate
+Peace Lily,Spathiphyllum,low,18,29,50,80,,,moist
+Pothos (Money Plant),Epipremnum aureum,low,18,29,40,70,,,moderate
+Rattlesnake Plant,Calathea lancifolia,medium,16,21,50,80,,,moist
+Rubber Plant,Ficus elastica,medium,16,27,40,60,,,moderate
+Sago Palm,Cycas revoluta,medium,13,29,30,60,,,dry
+Snake Plant,Sansevieria,medium,15,29,30,60,,,dry
+Venus Flytrap,Dionaea muscipula,bright,15,30,50,80,,,moist
+ZZ Plant,Zamioculcas zamiifolia,low,13,27,30,60,,,dry
+Tulip,Tulipa,bright,10,24,40,60,,,moderate
+
