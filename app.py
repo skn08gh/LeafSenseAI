@@ -514,11 +514,38 @@ Enter the conditions below and click **Find My Best Plants**.
                     info="Choose the light available where the plant will grow.",
                 )
                 soil_moisture_input = gr.Dropdown(
-                    choices=["dry", "moderate", "wet"],
+                    choices=["dry", "moderate", "moist"],
                     value="moderate",
                     label="🪴 Soil Moisture",
-                    info="Choose the usual moisture level of the soil.",
+                    info="Choose the current moisture level of your soil."
                 )
+        
+        with gr.Accordion("💡 Not sure what to choose? See the guide", open=False):
+            gr.Markdown("""
+    ## ☀️ Light Guide
+
+    **🌑 Low light**  
+    A darker indoor area with little direct sunlight.
+
+    **🌤️ Medium light**  
+    A reasonably bright area with indirect or filtered sunlight.
+
+    **☀️ Bright light**  
+    A very bright location receiving plenty of light, sometimes including direct sunlight.
+
+    ---
+
+    ## 🌱 Soil Moisture Guide
+
+    **🏜️ Dry**  
+    The soil feels dry to the touch.
+
+    **💧 Moderate**  
+    The soil feels slightly damp, but not wet or soggy.
+
+    **💦 Moist**  
+    The soil feels noticeably damp, but the plant is not sitting in water.
+    """)
 
         recommend_button = gr.Button(
             "🌿 Find My Best Plants",
