@@ -27,6 +27,7 @@ from plant_data import PLANTS
 from recommendations import get_recommendations
 from history import save_analysis, get_history
 from plant_recommender import recommend_plants
+from plantcare_reminders import build_reminders_ui, CSS as REMINDER_CSS
 
 
 # ============================================================
@@ -716,7 +717,13 @@ growth, soil, repotting, or personalized care.
         )
 
     # --------------------------------------------------------
-    # TAB 4: ANALYSIS HISTORY
+    # TAB 4: PLANT CARE REMINDERS
+    # --------------------------------------------------------
+    with gr.Tab("⏰ Plant Care Reminders"):
+        build_reminders_ui(demo)
+
+    # --------------------------------------------------------
+    # TAB 5: ANALYSIS HISTORY
     # --------------------------------------------------------
     with gr.Tab("📜 History"):
         gr.Markdown("## Previous plant analyses")
@@ -778,4 +785,4 @@ care using artificial intelligence and environmental compatibility.
 
 if __name__ == "__main__":
     print("\n🌿 LeafSense AI + PlantPal starting...\n")
-    demo.launch(inbrowser=True)
+    demo.launch(inbrowser=True, css=REMINDER_CSS)

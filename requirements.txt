@@ -1,4 +1,9 @@
 gradio
+numpy
+tensorflow
+pandas
+requests
+python-dotenv
 transformers
 torch
 torchvision

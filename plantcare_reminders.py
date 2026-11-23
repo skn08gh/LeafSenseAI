@@ -331,7 +331,7 @@ CSS = """
 .empty-state { background: #111827; border: 1px dashed #475569; border-radius: 12px; padding: 1.25rem; color: #cbd5e1; }
 """
 
-with gr.Blocks(title="LeafSense Plant Care Reminders") as demo:
+def build_reminders_ui(blocks: Any) -> None:
     gr.Markdown(
         """
 # 🌿 Plant Care Reminders
@@ -382,7 +382,7 @@ from the last time you watered or fertilized it.
         inputs=[plant_name, last_watered, last_fertilized, tracked_plants],
         outputs=[tracked_plants, plant_to_complete, dashboard, feedback],
     )
-    demo.load(
+    blocks.load(
         fn=load_saved_plants,
         inputs=[tracked_plants],
         outputs=[plant_to_complete, dashboard],
@@ -395,4 +395,6 @@ from the last time you watered or fertilized it.
 
 
 if __name__ == "__main__":
+    with gr.Blocks(title="LeafSense Plant Care Reminders") as demo:
+        build_reminders_ui(demo)
     demo.launch(theme=theme, css=CSS)
